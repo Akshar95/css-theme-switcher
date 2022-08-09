@@ -42,5 +42,28 @@ header {
   text-align: center;
   /* clip path adds point in the element that you can move around */
   clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
-/*  (x,y) - where (100, 100) is bottom right */
+  /*  (x,y) - where (100, 100) is bottom right */
+}
+
+.dropdown {
+  position: absolute;
+  width: 500px;
+  opacity: 10;
+  /* keep 0 by default so it will be invisible unitl focused */
+  z-index: 2;
+  background: blue;
+  border-top: 2px solid white;
+
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 3rem;
+  margin-top: 2rem;
+  padding: 0.5rem;
+
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.175em 0.5em;
+  transform: translate(-40%);
 }
