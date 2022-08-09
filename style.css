@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: currentColor;
+  /* above inherits color from parent */
+  text-decoration: none;
+}
+
+.navbar {
+  height: 70px;
+  width: 100%;
+  background: black;
+  color: white;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* spaced evenly across horizontal axis */
+  height: 100%;
+  /* fills up parent navbar */
+}
+
+/* give it cool triangle shape at bottom */
+header {
+  padding: 1em;
+  background: red;
+  margin-bottom: 1em;
+  padding-bottom: 3.5em;
+  text-align: center;
+  /* clip path adds point in the element that you can move around */
+  clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
+/*  (x,y) - where (100, 100) is bottom right */
+}

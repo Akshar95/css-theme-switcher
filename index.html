@@ -9,9 +9,53 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
-    <script defer src="app.js"></script> 
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
     <!-- defer so that script loads up after the html -->
   </head>
-  <body></body>
+
+  <!-- class light is the default theme, and will use JS to swap/toggle -->
+  <body class="light">
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">Home</li>
+        <li class="nav-item">About</li>
+        <!-- navbar dropdown -->
+        <li class="nav-item has-dropdown">
+          <a href="#">Theme</a>
+          <ul class="dropdown">
+            <li class="dropdown-item">
+              <a id="light" href="#">light</a>
+            </li>
+            <li class="dropdown-item">
+              <a id="dark" href="#">dark</a>
+            </li>
+            <li class="dropdown-item">
+              <a id="solar" href="#">solarize</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item">Login</li>
+      </ul>
+    </nav>
+
+    <header>
+      <img src="logo.png" class="logo" />
+      <h1>Front-end Web Development</h1>
+      <p>React, Next, Node.js, Typescript, Javascript</p>
+    </header>
+    <main>
+      <p>I have self taught my self how to code</p>
+      <p>I want to be an expert in building react blogs etc.</p>
+      <p>
+        makle blogs for people at fixed rate and then offer them montly fee for
+        upkeep and management
+      </p>
+      <p>
+        make the medium blog and then list all the advantages on there to tell
+        everyone what the blog offers
+      </p>
+    </main>
+  </body>
 </html>
